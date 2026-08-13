@@ -1,0 +1,19 @@
+<!DOCTPYE html>
+<html>
+<head>
+<title> Click Me! </title>
+</head>
+
+<body onclick="greet()">
+<script>
+function click() {
+const r = Math.floor(Math.random() * 256);
+const g = Math.floor(Math.random() * 256);
+const b = Math.floor(Math.random() * 256);
+
+document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+</script>
+
+click();
+</body>
+</html>
