@@ -4,17 +4,17 @@
 <title> Click Me! </title>
 </head>
 
-<body onclick="click()">
+<body onclick="color_click()">
 <script>
-function click() {
-const r = Math.floor(Math.random() * 256);
-const g = Math.floor(Math.random() * 256);
-const b = Math.floor(Math.random() * 256);
-
-document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+function color_click() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 }
+
+color_click();
 </script>
 
-click();
 </body>
 </html>
