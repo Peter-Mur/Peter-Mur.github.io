@@ -6,12 +6,21 @@
 
 <body onclick="color_click()">
 <script>
+let i = 0
+  
 function color_click() {
+  i += 1
   const r = Math.floor(Math.random() * 256);
   const g = Math.floor(Math.random() * 256);
   const b = Math.floor(Math.random() * 256);
   document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+
+  console.log(i)
 }
+
+document.body.addEventListener("click", color_click);
+
+print(i)
 
 color_click();
 </script>
